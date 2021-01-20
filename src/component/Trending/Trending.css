@@ -1,0 +1,65 @@
+
+.trendPage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 400vh;
+    background-color: #d4d2d2;
+    margin-bottom: 10%;
+}
+.trendFlex {
+    left:10%;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d4d2d2;
+
+}
+.trendUl {
+    padding:10px 1px;
+    width: 30%;
+    margin:auto;
+}
+.poster{
+    filter: grayscale(40%);
+    height: 50%;
+    width: 60%;
+}
+
+.trendTitle {
+    position: absolute;
+    background-color: #d4d2d2;
+    width: 90.3%;
+    height: 10vh;
+    left:4.4%;
+    bottom:100%;
+    margin: auto;
+    padding: 2%;
+}
+.titleCard{
+    height: 12vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 60%;
+    font-size: 12px;
+    position: relative;
+    left:20%;
+    bottom:4px;
+    background-color: white;
+    text-align: left;
+}
+.poster:hover {
+    cursor: pointer;
+}
+
+.titleCard:hover {
+    cursor: pointer;
+}
+.titleCard h2 {
+    padding:10% 5%;
+    text-decoration: underline;
+}
+
+.titleCard h3 {
+    padding: 0% 5%;
+}

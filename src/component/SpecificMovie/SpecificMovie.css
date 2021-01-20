@@ -1,0 +1,36 @@
+.MoviePage {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+}
+
+.singlePoster {
+    width: 20%;
+    position: absolute;
+    top:15%;
+    left:25%;
+    box-shadow: 2px 2px 5px;
+    height:57%;
+}
+.singlePoster img {
+    width: 100%;
+}
+
+
+.movieInfo {
+    background-color: #d4d2d2;
+    position: absolute;
+    top:15%;
+    width: 20%;
+    left:50%;
+    height: 60vh;
+    box-shadow: 2px 2px 5px;
+    padding: 5px 10px;
+}
+
+.movieInfo h1 {
+    text-align: center;
+}
+#tagline {
+    text-align: center;
+}

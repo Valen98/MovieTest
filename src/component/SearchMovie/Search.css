@@ -1,0 +1,46 @@
+.Search {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top:25%;
+    left:60%;
+}
+
+.searchPoster{
+    width: 60%;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.posterDiv {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.movieDiv {
+    width: 50%;
+    display: flex;
+    background-color: whitesmoke;
+    border-bottom: 2px solid grey;
+}
+
+.titleOverview {
+    margin: auto;
+    padding-top: 5%;
+    width: 70%;
+    background-color: whitesmoke;
+}
+
+.searchField {
+    padding:20px 10px;
+    font-size: 1rem;
+    border:1px solid grey;
+    width: 50%;
+    background-color: #d4d2d2;
+}
+
+.searchButton {
+    width: 10%;
+    padding: 20px 10px;
+    height: 80%;
+}
