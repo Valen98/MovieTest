@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 import Axios from 'axios'
 import './SpecificMovie.css'
 
 function SpecificMovie() {
     const location = useLocation()
+    const history = useHistory()
     const [movie, setMovie] = useState([])
+    const [genres, setGenres] = useState([])
 
     useEffect(() => {
      async function fetchMovies(){
          let request = await Axios.get(`https://api.themoviedb.org/3/movie/${location.customId}?api_key=${process.env.REACT_APP_SECRET_KEY}`)
          setMovie(request.data)
+         setGenres(request.data.genres)
          console.log(request.data)
          return request
      }
      fetchMovies()
-    }, [])
+    }, [history, location.customId])
     return (
         <div className="MoviePage">
             <div className="singlePoster">
@@ -32,6 +35,14 @@ function SpecificMovie() {
                 <h4>{movie.runtime} Minutes</h4>
                 <br/>
                 <h4>Popularity: {movie.popularity}</h4>
+                <br/>
+                <h4>Status: {movie.status}</h4>
+                <br/>
+                <h4 id="Genres">Genres</h4>
+                <br/>
+                    {genres.map(item => (
+                        <h3 className="genres" key={item.id}>{item.name}</h3>
+                    ))}
             </div>
         </div>
     )

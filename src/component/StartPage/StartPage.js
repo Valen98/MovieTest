@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -16,8 +17,6 @@ function StartPage() {
      }
      fetchMovies()
     }, [])
-
-    console.log(movie)
 
     return (
         <div className="mainPage">
